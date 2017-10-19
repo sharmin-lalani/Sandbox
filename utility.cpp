@@ -79,7 +79,7 @@ void put_string_into_child_addr_space(pid_t child, long addr,
     }
 }
 
-/* Bad implementation, we are reading the config file for each open system call */
+/* TODO: store config, right now we are reading the config file for each open system call */
 void get_file_permission (FILE *config, char*filename, char *perm) {
   char glob[1024], temp_perm[4];
   perm[0] = perm[1] = perm[2] = '1';
